@@ -174,6 +174,14 @@ docker build -t microservice-helloworld .
 
 ---
 
+![image1.jpeg](src/main/resources/image1.jpeg)
+![image2.jpeg](src/main/resources/image2.jpeg)
+![image3.jpeg](src/main/resources/image3.jpeg)
+![image4.jpeg](src/main/resources/image4.jpeg)
+![image5.jpeg](src/main/resources/image5.jpeg)
+![image6.jpeg](src/main/resources/image6.jpeg)
+![image7.jpeg](src/main/resources/image7.jpeg)
+
 ## Paso 6: Ejecutar el Servicio en Play with Docker
 
 ### Acceder a Play with Docker:
