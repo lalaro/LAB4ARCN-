@@ -1,7 +1,7 @@
 # Laboratorio: Creación de un Microservicio "Hello World" con Spring Boot, Docker y Play with Docker
 
 ## Introducción
-Este laboratorio te guiará a través de los pasos necesarios para crear un microservicio básico "Hello World" utilizando Spring Boot, GitHub, GitHub Codespaces y Play with Docker.
+Este laboratorio guiará a través de los pasos necesarios para crear un microservicio básico "Hello World" utilizando Spring Boot, GitHub, GitHub Codespaces y Play with Docker.
 
 ---
 
@@ -10,7 +10,7 @@ Este laboratorio te guiará a través de los pasos necesarios para crear un micr
 ### Crear un Repositorio en GitHub:
 1. Ve a [GitHub](https://github.com/) y accede a tu cuenta.
 2. Haz clic en "New" para crear un nuevo repositorio.
-3. Asigna un nombre al repositorio, por ejemplo: `hello-world-microservice`.
+3. Asigna un nombre al repositorio, por ejemplo: `LAB4ARCN-`.
 4. Inicializa el repositorio con un archivo `README.md`.
 
 ---
@@ -114,11 +114,16 @@ Utiliza el terminal integrado en Codespaces para ejecutar tu aplicación con el 
 mvn spring-boot:run
 ```
 
+![image1.jpeg](src/main/resources/image1.jpeg)
+
+
 Verifica que la aplicación se ejecuta correctamente ejecutando:
 
 ```bash
 curl http://localhost:8080/hello
 ```
+
+![image6.jpeg](src/main/resources/image6.jpeg)
 
 ---
 
@@ -151,7 +156,7 @@ docker build -t microservice-helloworld .
 2. Etiqueta la imagen con tu nombre de usuario de Docker Hub:
 
     ```bash
-    docker tag microservice-helloworld <tu-usuario>/microservice-helloworld
+    docker tag microservice-helloworld lalaro/pruebarcn
     ```
 
 3. Cierra sesión en Docker Hub en caso de estar autenticado:
@@ -163,24 +168,22 @@ docker build -t microservice-helloworld .
 4. Inicia sesión en Docker Hub:
 
     ```bash
-    docker login -u <tu-usuario>
+    docker login -u lalaro
     ```
 
 5. Sube la imagen a Docker Hub:
 
     ```bash
-    docker push <tu-usuario>/microservice-helloworld
+    docker push lalaro/pruebarcn
     ```
 
----
-
-![image1.jpeg](src/main/resources/image1.jpeg)
 ![image2.jpeg](src/main/resources/image2.jpeg)
 ![image3.jpeg](src/main/resources/image3.jpeg)
 ![image4.jpeg](src/main/resources/image4.jpeg)
 ![image5.jpeg](src/main/resources/image5.jpeg)
-![image6.jpeg](src/main/resources/image6.jpeg)
+
 ![image7.jpeg](src/main/resources/image7.jpeg)
+---
 
 ## Paso 6: Ejecutar el Servicio en Play with Docker
 
@@ -192,8 +195,41 @@ docker build -t microservice-helloworld .
 En Play with Docker, ejecuta el contenedor con el siguiente comando:
 
 ```bash
-docker run -p 8080:8080 <tu-usuario>/microservice-helloworld
+docker run -p 8080:8080 lalaro/pruebarcn
 ```
-
+![image8.jpeg](src/main/resources/image8.jpeg)
 ### Probar el Servicio:
 Accede al servicio desde el enlace proporcionado por Play with Docker, añadiendo `/hello` al final de la URL para ver el mensaje **"Hello, World!"**.
+
+![image9.jpeg](src/main/resources/image9.jpeg)
+
+
+## Construido con
+
+* [Maven](https://maven.apache.org/) - Gestión de dependencias.
+* [Java](https://www.java.com/es/) - Versionamiento en Java.
+* [GitHub](https://docs.github.com/es) - Sistema de control de versiones distribuido.
+* [IntelliJ](https://www.jetbrains.com/es-es/idea/) - Entorno de desarrollo integrado.
+* [Docker](https://docs.docker.com/) - Tecnología en contenedores que permite crear y usar contenedores Linux.
+* [Spring Boot](https://docs.spring.io/spring-boot/index.html) -Herramienta de código abierto para desarrollar aplicaciones web y microservicios en Java
+
+## Contribuyendo
+
+Por favor, lee [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) para detalles sobre nuestro código de conducta y el proceso para enviarnos solicitudes de cambios (*pull requests*).
+
+## Versionado
+
+Usamos [SemVer](http://semver.org/) para el versionado.
+
+## Autores
+
+* **Laura Valentina Rodríguez Ortegón** - *Lab4ARCN* - [Repositorio](https://github.com/lalaro/LAB4ARCN-.git)
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE.md](LICENSE.md) para más detalles.
+
+## Reconocimientos
+
+* Agradecimientos a la Escuela Colombiana de Ingeniería
+* La documentación de Git Hub
